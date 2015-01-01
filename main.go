@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./server"
 	"./utils"
 	"container/heap"
 	"fmt"
@@ -69,4 +70,5 @@ func main() {
 		fmt.Printf("%.2d : %s", item.priority, item.value)
 	}
 	utils.Print()
+	server.Start()
 }
